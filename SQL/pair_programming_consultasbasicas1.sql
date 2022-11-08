@@ -2,8 +2,6 @@
 # empleadas y empleados de la empresa Northwind, consultando los campos employee_id, last_name,
 # first_name.
 
-USE sys;
-
 SELECT employee_id, last_name, first_name
 FROM employees;
 
