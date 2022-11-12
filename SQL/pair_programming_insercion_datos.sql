@@ -1,5 +1,5 @@
 USE tienda_zapatilla;
-#Insertamos datos en tablas
+#Insertamos datos en tablas según los datos facilitados en el enunciado
 INSERT INTO zapatilla (modelo, color, marca, talla)
 	VALUES ('XQYUN', 'Negro', 'Nike', 42),
 		('UOPMN', 'Rosas', 'Nike', 39),
@@ -20,19 +20,22 @@ INSERT INTO facturas (numero_factura, fecha, id_zapatilla, id_empleados, id_clie
 		('1234', '2005-05-23', 1, 1, 3, 89.91),
         ('12345', '2015-09-18', 2, 3, 3, 76.23);
 
-# Modificación de datos
+# Modificación de datos, cambiamos el color de la segunda zapatilla por amarillas en la tabla zapatillas
 UPDATE zapatilla
 SET color = 'Amarillas' 
 WHERE id_zapatilla = 2;
 
+#Cambiamos la tienda a la empleada 1 a 'A Coruña' en la tabla empleados
 UPDATE empleados
 SET tienda = 'A Coruña'
 WHERE id_empleados = 1;
 
+#Cambiamos el número de cliente al cliente 1 en la tabla clientes
 UPDATE clientes
 SET numero_telefono = '12345678'
 WHERE id_cliente = 1;
 
+#Cambiamos el total de la factura 2 en la tabla facturas
 UPDATE facturas
 SET total = 89.91
 WHERE id_factura = 2;

@@ -6,7 +6,7 @@ FROM products
 ORDER BY product_id ASC
 LIMIT 10;
 
-# Misma consuta con los últimos 10 productos id en descendente
+# Misma consuta que la anterior con los últimos 10 productos id en descendente
 SELECT product_name, unit_price
 FROM products 
 ORDER BY product_id DESC
